@@ -2,9 +2,19 @@
 <html lang="{{ lang }}">
   <head>
     {% include "head.njk" %}
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+  algoliasearchNetlify({
+    appId: 'X5ZL4DYLTL',
+    apiKey: '1c1a1dc5ecd1a9a44f8bc75c2408ad38',
+    siteId: '66817e14-fb59-44a8-bfc6-2a50ff8d592e',
+    branch: 'master',
+  });
+</script>
   </head>
 
   <body
+  <input type="search" />
   data-img-src="{{ page.inputPath | dirname }}/"
   data-img-dist="{{ page.outputPath | dirname }}/"
 >
